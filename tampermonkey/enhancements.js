@@ -281,13 +281,13 @@
     if(features.updateTitle.enabled) {try{console.log("Update TiQ Title Loading"); function updateTiQTitle() {if(utui.data.settings.account) {document.title = "TiQ - " + utui.data.settings.account;}}console.log("Update TiQ Title Loaded");}catch(e) {console.log("Update TiQ Title Failed: " + e);}}
     /************** Add Enlarge Ids End ***************************/
     /************** Add Condition Check Start ***************************/
-    if (features.solutions_fix_conditions.enabled) {async_request("https://cdn.rawgit.com/MauricioAndrades/enhancements-bin/2.0/tampermonkey/solutions.fix_conditions.js").then((data) => {return async_exec(data, "solutions_fix_conditions")}).then((done) => {console.log('Solutions: Fix Conditions: ' + done)}).catch((e)  =>  {console.log("Solutions: Fix Conditions: " + e)}) }
+    if (features.solutions_fix_conditions.enabled) {async_request("https://cdn.rawgit.com/GreenCaricature/enhancements-bin/3.1/tampermonkey/solutions.fix_conditions.js").then((data) => {return async_exec(data, "solutions_fix_conditions")}).then((done) => {console.log('Solutions: Fix Conditions: ' + done)}).catch((e)  =>  {console.log("Solutions: Fix Conditions: " + e)}) }
     /************** Add Condition Check End ***************************/
     /************** Solutions Extra Info ***************************/
-    if (features.solutions_extra_info.enabled) {async_request("https://cdn.rawgit.com/MauricioAndrades/enhancements-bin/2.0/tampermonkey/solutions.extra_info.js").then((data) => {return async_exec(data, "solutions_extra_info")}).then((done)=>{console.log("Solutions Extra Info:" + done)}).catch((e) => {console.log("Solutions Extra Info:" + e)}); }
+    if (features.solutions_extra_info.enabled) {async_request("https://cdn.rawgit.com/GreenCaricature/enhancements-bin/3.1/tampermonkey/solutions.extra_info.js").then((data) => {return async_exec(data, "solutions_extra_info")}).then((done)=>{console.log("Solutions Extra Info:" + done)}).catch((e) => {console.log("Solutions Extra Info:" + e)}); }
     /************** Solutions Extra Info End ***************************/
     /************** Solutions Code Enh Start ***************************/
-    if (features.solutions_code_enh.enabled) {async_request("https://cdn.rawgit.com/GreenCaricature/enhancements-bin/master/tampermonkey/solutions.code_enh.js").then((data) => {return async_exec(data, "solutions_code_enh")}).then((done)=>{console.log("Solutions Code Enh: " + done)}).catch((e) => {console.log("Solutions Code Enh: " + e)}); }
+    if (features.solutions_code_enh.enabled) {async_request("https://cdn.rawgit.com/GreenCaricature/enhancements-bin/3.1/tampermonkey/solutions.code_enh.js").then((data) => {return async_exec(data, "solutions_code_enh")}).then((done)=>{console.log("Solutions Code Enh: " + done)}).catch((e) => {console.log("Solutions Code Enh: " + e)}); }
     /************** Solutions Code Enh End ***************************/
     console.log("Finished TealiumIQ enhancements");
 })();
