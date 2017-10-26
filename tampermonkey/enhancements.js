@@ -287,7 +287,7 @@
     if (features.solutions_extra_info.enabled) {async_request("https://cdn.rawgit.com/MauricioAndrades/enhancements-bin/2.0/tampermonkey/solutions.extra_info.js").then((data) => {return async_exec(data, "solutions_extra_info")}).then((done)=>{console.log("Solutions Extra Info:" + done)}).catch((e) => {console.log("Solutions Extra Info:" + e)}); }
     /************** Solutions Extra Info End ***************************/
     /************** Solutions Code Enh Start ***************************/
-    if (features.solutions_code_enh.enabled) {async_request("https://cdn.rawgit.com/MauricioAndrades/enhancements-bin/2.0/tampermonkey/solutions.code_enh.js").then((data) => {return async_exec(data, "solutions_code_enh")}).then((done)=>{console.log("Solutions Code Enh: " + done)}).catch((e) => {console.log("Solutions Code Enh: " + e)}); }
+    if (features.solutions_code_enh.enabled) {async_request("https://cdn.rawgit.com/GreenCaricature/enhancements-bin/master/tampermonkey/solutions.code_enh.js").then((data) => {return async_exec(data, "solutions_code_enh")}).then((done)=>{console.log("Solutions Code Enh: " + done)}).catch((e) => {console.log("Solutions Code Enh: " + e)}); }
     /************** Solutions Code Enh End ***************************/
     console.log("Finished TealiumIQ enhancements");
 })();
